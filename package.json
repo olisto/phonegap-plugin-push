@@ -1,5 +1,6 @@
 {
-  "name": "@triggi/phonegap-plugin-push",
+  "name": "phonegap-plugin-push",
+  "private": true,
   "description": "Register and receive push notifications.",
   "types": "./types/index.d.ts",
   "version": "3.0.0",
