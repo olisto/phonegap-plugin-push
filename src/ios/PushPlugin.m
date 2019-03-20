@@ -309,7 +309,8 @@
 
             //  GCM options
             [self setFcmSenderId: fcmSenderId];
-            if(isGcmEnabled && [[self fcmSenderId] length] > 0) {
+            // Block iOS from using FCM, as we don't want to at this time, xoxo gkrijnen
+            if(false && isGcmEnabled && [[self fcmSenderId] length] > 0) {
                 NSLog(@"Using FCM Notification");
                 [self setUsesFCM: YES];
                 dispatch_async(dispatch_get_main_queue(), ^{
